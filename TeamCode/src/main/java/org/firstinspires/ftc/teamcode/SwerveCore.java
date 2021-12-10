@@ -205,17 +205,17 @@ public class SwerveCore extends OpMode {
 //        servoRightFront.scaleRange(1.0/12,11.0/12);
 //        servoLeftRear.scaleRange(1.0/12,11.0/12);
 //        servoRightRear.scaleRange(1.0/12,11.0/12);
+//
+//        //Game Mark Drop servo
+//        gameMarkDrop = hardwareMap.servo.get("gameMarkDrop");
+//        swerveDebugDevice(500, "Game Marker Drop", gameMarkDrop);
 
-        //Game Mark Drop servo
-        gameMarkDrop = hardwareMap.servo.get("gameMarkDrop");
-        swerveDebugDevice(500, "Game Marker Drop", gameMarkDrop);
-
-        // foundation grab servos
-        foundationLeft = hardwareMap.servo.get("GrabLeft");
-        swerveDebugDevice(500, "Left Foundation Servo", foundationLeft);
-        foundationRight = hardwareMap.servo.get("GrabRight");
-        swerveDebugDevice(500, "Right Foundation Servo", foundationRight);
-        foundationRight.setDirection(Servo.Direction.REVERSE);
+//        // foundation grab servos
+//        foundationLeft = hardwareMap.servo.get("GrabLeft");
+//        swerveDebugDevice(500, "Left Foundation Servo", foundationLeft);
+//        foundationRight = hardwareMap.servo.get("GrabRight");
+//        swerveDebugDevice(500, "Right Foundation Servo", foundationRight);
+//        foundationRight.setDirection(Servo.Direction.REVERSE);
 
 
         swerveDebug(500, "SwerveCore::init", "SERVOS connected");

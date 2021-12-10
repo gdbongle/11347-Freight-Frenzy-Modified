@@ -244,7 +244,7 @@ public class SwerveAuto extends SwerveCore {
         moveTimePushoff = 400;
         autoDriveWait = Boolean.FALSE;
         // force the marker drop servo to hold tight
-        gameMarkDrop.setPosition(0);
+//        gameMarkDrop.setPosition(0);
 
         // cause all the wheels to turn to the initialization position - 45 degrees
         swerveLeftFront.updateWheel(initWheelPower, -initWheelAngle);
@@ -548,7 +548,7 @@ public class SwerveAuto extends SwerveCore {
                 ourSwerve.stopRobot();
 
                 // drop the marker
-                gameMarkDrop.setPosition(1);
+//                gameMarkDrop.setPosition(1);
 
                 // wait for marker drop
                 if (crater) {

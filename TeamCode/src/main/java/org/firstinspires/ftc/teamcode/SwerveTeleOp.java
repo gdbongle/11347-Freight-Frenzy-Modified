@@ -111,14 +111,14 @@ public class SwerveTeleOp extends SwerveCore {
             speedScale = 1.0;
         }
 
-        // if either bumper, grab foundation
-        if ( gamepad1.left_bumper || gamepad1.right_bumper ) {
-            foundationLeft.setPosition( 0.85 );
-            foundationRight.setPosition( 0.85 );
-        } else {
-            foundationLeft.setPosition( 0.5 );
-            foundationRight.setPosition( 0.5 );
-        }
+//        // if either bumper, grab foundation
+//        if ( gamepad1.left_bumper || gamepad1.right_bumper ) {
+//            foundationLeft.setPosition( 0.85 );
+//            foundationRight.setPosition( 0.85 );
+//        } else {
+//            foundationLeft.setPosition( 0.5 );
+//            foundationRight.setPosition( 0.5 );
+//        }
 
         // Move the robot, flipping y since the joysticks are upside down
         ourSwerve.driveRobot(( gamepad1.left_stick_x * speedScale ),
