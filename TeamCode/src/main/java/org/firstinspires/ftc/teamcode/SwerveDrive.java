@@ -442,27 +442,6 @@ public class SwerveDrive {
     }
 
     // ***********************************************************************
-    // checkGravity() gets x,y and z accel the imu senses.
-    //
-    // the orientation of the IMU has X as vertical, so we swap for display
-    // ***********************************************************************
-    boolean isRobotLevel(){
-        gravAngles=imu.getGravity();
-        if(gravAngles.zAccel<.30&&gravAngles.yAccel<.30){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    String getGravXYZAccel(){
-        gravAngles=imu.getGravity();
-        return("X: " + String.format( dblFormat, gravAngles.zAccel ) +
-                " Y: " + String.format( dblFormat, gravAngles.yAccel ) +
-                " Z: " + String.format( dblFormat, gravAngles.xAccel ));
-    }
-
-    // ***********************************************************************
     // checkOrientation - gather the current orientation data
     // ***********************************************************************
     void checkOrientation() {

@@ -13,29 +13,12 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 //@Disabled
 public class SwerveTeleOp extends SwerveCore {
     // Note when we are approaching the end of the game
-    Boolean inEndGame;
+    boolean inEndGame;
 
-    enum autoScoring {
-        DRIVE_FORWARD,
-        EXTEND,
-        INTAKE,
-        TURN_LEFT,
-        TURN_RIGHT,
-        LANDER
-    }
-    private autoScoring curScoreState;
 
     // scale back speed for fine-tuned moves
     private double speedScale;
 
-    // ***********************************************************************
-    // SwerveTeleOp
-    // ***********************************************************************
-    // Constructs the class.
-    // The system calls this member when the class is instantiated.
-    public SwerveTeleOp() {
-
-    }
 
     // ***********************************************************************
     // Init
