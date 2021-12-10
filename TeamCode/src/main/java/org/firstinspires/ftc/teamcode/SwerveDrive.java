@@ -450,7 +450,7 @@ public class SwerveDrive {
 
 
         // and save the heading
-        curHeading = - ( angles.firstAngle - baseOrientationAngle );
+        curHeading = - ( angles.thirdAngle - baseOrientationAngle );
 
         // log the orientation
         orientationLog = "Orient: "
